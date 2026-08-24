@@ -1,45 +1,67 @@
-# Student Pass/Fail Prediction
+# Student Performance Prediction using Machine Learning and Explainable AI
 
-## About
-This project predicts whether a student will Pass or Fail using Machine Learning.
+## Project Overview
 
-The model uses:
-- Gender
-- Study Hours
-- Attendance
-- Assignment Marks
+This project predicts whether a student will **PASS or FAIL** based on factors such as:
 
-## Machine Learning
+* Gender
+* Study Hours
+* Attendance
+* Assignment Marks
 
-I used:
-- Random Forest Classifier
-- Scikit-learn
-- Pandas
-- SHAP
-- Matplotlib
-- Seaborn
+The system uses a **Random Forest Machine Learning model** along with **Explainable AI techniques like SHAP** to understand feature importance and prediction behavior.
 
-## Results
+The project also includes:
 
-The model achieved **100% accuracy on the test data**.
-I also performed:
-- Feature Importance
-- SHAP Analysis
-- Bias Analysis
-- Student Prediction
+* Bias Analysis
+* Feature Importance Visualization
+* SHAP Explainability
+* Pass vs Fail Graphs
+* User Input Prediction
 
-## Example
-Input:
-- Gender: Male
-- Study Hours: 5
-- Attendance: 79%
-- Assignment Marks: 57
-Prediction:
-**PASS**
-Pass Probability: **61%**
-## Files
-- `student_pass_fail_prediction.ipynb` - Main notebook
-- `student_data.csv` - Dataset
-- `feature_importance.png` - Feature importance graph
-- `shap_plot.png` - SHAP graph
-- `bias_analysis.png` - Bias analysis graph
+
+## Technologies Used
+
+* Python
+* Pandas
+* Scikit-learn
+* Matplotlib
+* Seaborn
+* SHAP
+
+
+## Project Features
+
+* Student Performance Prediction
+* Data Preprocessing
+* Random Forest Classification
+* Accuracy Evaluation
+* Feature Importance Analysis
+* SHAP Explainability
+* Bias Detection
+* Graph Visualization
+* User Prediction System
+
+
+## Dataset Features
+
+| Feature     | Description                        |
+| ----------- | ---------------------------------- |
+| Gender      | Male / Female                      |
+| StudyHours  | Number of study hours              |
+| Attendance  | Attendance percentage              |
+| Assignments | Assignment marks                   |
+| Pass        | Target output (0 = Fail, 1 = Pass) |
+
+
+## Project Structure
+
+text
+Student_Bias/
+│
+├── analysis.py
+├── student_data.csv
+├── feature_importance.png
+├── shap_plot.png
+├── pass_fail_graph.png
+└── README.md
